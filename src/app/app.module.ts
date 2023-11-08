@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { ArrowComponent } from './components/arrow/arrow.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NotFoundComponent,
-    DropdownComponent
+    DropdownComponent,
+    ArrowComponent
   ],
   imports: [
     BrowserModule,
