@@ -1,19 +1,18 @@
 <div class="flex flex-column align-items-center gap-2">
 
   <img class="w-4" src="../../../assets/app-logo.avif" alt="logo">
-  <h1>IdiomaAdivina</h1>
-  <p class="text-justify">"IdiomaAdivina" es la aplicación perfecta para aprender idiomas de manera divertida y efectiva. Elige tus idiomas, juega adivinando palabras y expande tu vocabulario. Personaliza tu experiencia, completa desafíos y conecta con otros estudiantes en una comunidad amigable. Descarga "IdiomaAdivina" y comienza a aprender idiomas de una manera emocionante hoy mismo.</p>
+  <h1>{{'home.TITLE' | translate}}</h1>
+  <p class="text-justify">{{'home.DESCRIPTION' | translate}}</p>
 
   <div class="flex gap-4 align-items-center my-4">
-
-    <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage1" placeholder="Nuevo idioma"></p-dropdown>
+    <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage1" placeholder="{{'home.NEW_LANGUAGE' | translate}}"></p-dropdown>
     <app-arrow></app-arrow>
-    <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage2" placeholder="Idioma conocido"></p-dropdown>
+    <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage2" placeholder="{{'home.OLD_LANGUAGE' | translate}}"></p-dropdown>
   </div>
 
   <div class="flex gap-4 my-4">
-    <p-button label="Jugar" [disabled]="!selectedLanguage1 || !selectedLanguage2"></p-button>
-    <p-button label="Vocabulario" [disabled]="!selectedLanguage1 || !selectedLanguage2"></p-button>
+    <p-button label="{{'home.PLAY' | translate}}" [disabled]="!selectedLanguage1 || !selectedLanguage2"></p-button>
+    <p-button label="{{'home.VOCABULARY' | translate}}" [disabled]="!selectedLanguage1 || !selectedLanguage2"></p-button>
   </div>
 
 </div>
