@@ -1,13 +1,11 @@
 <div class="flex flex-column align-items-center gap-2">
 
-  <img class="w-4" src="../../../assets/app-logo.avif" alt="logo">
-
   <div class="flex flex-column align-items-center gap-2">
     <h1>{{(disableButtons() ? 'play.SET_LANG' : 'play.CHOOSE_GAME') | translate}}</h1>
     <div class="flex gap-4 align-items-center my-4">
-      <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage1" placeholder="{{'home.NEW_LANGUAGE' | translate}}"></p-dropdown>
+      <p-dropdown [options]="languages" optionLabel="name" [(ngModel)]="selectedLanguage1" placeholder="{{'home.NEW_LANGUAGE' | translate}}"></p-dropdown>
       <app-arrow></app-arrow>
-      <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage2" placeholder="{{'home.OLD_LANGUAGE' | translate}}"></p-dropdown>
+      <p-dropdown [options]="languages" optionLabel="name" [(ngModel)]="selectedLanguage2" placeholder="{{'home.OLD_LANGUAGE' | translate}}"></p-dropdown>
     </div>
     <p class="text-red-500" *ngIf="selectedSameLanguage()">{{'play.SAME_LANG' | translate}}</p>
   </div>

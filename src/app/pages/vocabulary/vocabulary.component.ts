@@ -1,18 +1,16 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
+import {languages} from "../../app.component";
+import {Language} from "../../model/Language";
 
 @Component({
   selector: 'app-vocabulary',
   templateUrl: './vocabulary.component.html',
   styleUrls: ['./vocabulary.component.scss']
 })
-export class VocabularyComponent implements OnInit{
+export class VocabularyComponent {
 
-  languages ?: string[];
-  selectedLanguage ?: string;
-
-  ngOnInit() {
-    this.languages = ["Español", "English", "Français", "Italiano"];
-  }
+  languages = languages;
+  selectedLanguage ?: Language;
 
   disableButtons() {
     return !this.selectedLanguage

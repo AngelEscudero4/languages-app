@@ -1,3 +1,16 @@
 <div class="mx-7">
+
+  <p-menubar [model]="items">
+    <ng-template pTemplate="start">
+      <div class="flex gap-2 align-items-center cursor-pointer" (click)="goToHomePage()">
+        <img src="assets/app-logo.avif" alt="Logo" height="40" class="mr-2"/>
+        <h3>IdiomaAdivina</h3>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage" (onChange)="setLanguage($event)" optionLabel="name"></p-dropdown>
+    </ng-template>
+  </p-menubar>
+
   <router-outlet></router-outlet>
 </div>

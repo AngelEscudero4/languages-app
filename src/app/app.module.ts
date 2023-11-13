@@ -16,6 +16,7 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import { PlayComponent } from './pages/play/play.component';
 import { VocabularyComponent } from './pages/vocabulary/vocabulary.component';
 import {CardModule} from "primeng/card";
+import {MenubarModule} from "primeng/menubar";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -46,7 +47,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ButtonModule,
     DropdownModule,
     FormsModule,
-    CardModule
+    CardModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent],

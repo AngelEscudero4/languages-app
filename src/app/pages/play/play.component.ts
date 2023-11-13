@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
-import {Game} from "../../model/game";
+import {Game} from "../../model/Game";
 import {TranslateService} from "@ngx-translate/core";
+import {languages} from "../../app.component";
+import {Language} from "../../model/Language";
 
 @Component({
   selector: 'app-play',
@@ -9,19 +11,17 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class PlayComponent {
 
-  languages ?: string[];
-  selectedLanguage1 ?: string;
-  selectedLanguage2 ?: string;
+  languages = languages;
+  selectedLanguage1 ?: Language;
+  selectedLanguage2 ?: Language;
 
   games: Game[] = [];
 
   constructor(private translate: TranslateService) {
-    this.languages = ["Español", "English", "Français", "Italiano"];
 
     this.translate
       .get('play.games')
       .subscribe((translation: Game[]) => {
-        console.log(translation)
         Object.values(translation).map((value) => this.games.push(value))
       });
   }
