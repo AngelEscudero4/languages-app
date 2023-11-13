@@ -6,5 +6,8 @@
     "OLD_LANGUAGE": "Idioma conocido",
     "PLAY": "Jugar",
     "VOCABULARY": "Vocabulario"
+  },
+  "notFound": {
+    "NOT_FOUND": "¡Ups! ¡Página no encontrada!"
   }
 }
