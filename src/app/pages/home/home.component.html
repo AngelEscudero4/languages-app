@@ -4,15 +4,9 @@
   <h1>{{'home.TITLE' | translate}}</h1>
   <p class="text-justify">{{'home.DESCRIPTION' | translate}}</p>
 
-  <div class="flex gap-4 align-items-center my-4">
-    <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage1" placeholder="{{'home.NEW_LANGUAGE' | translate}}"></p-dropdown>
-    <app-arrow></app-arrow>
-    <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage2" placeholder="{{'home.OLD_LANGUAGE' | translate}}"></p-dropdown>
-  </div>
-
   <div class="flex gap-4 my-4">
-    <p-button label="{{'home.PLAY' | translate}}" [disabled]="!selectedLanguage1 || !selectedLanguage2"></p-button>
-    <p-button label="{{'home.VOCABULARY' | translate}}" [disabled]="!selectedLanguage1 || !selectedLanguage2"></p-button>
+    <p-button label="{{'home.PLAY' | translate}}" (onClick)="goTo(Pages.PLAY)"></p-button>
+    <p-button label="{{'home.VOCABULARY' | translate}}" (onClick)="goTo(Pages.VOCAB)"></p-button>
   </div>
 
 </div>

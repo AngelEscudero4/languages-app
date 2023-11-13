@@ -1,16 +1,21 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
+import {Pages} from "../../app-routing.module";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit{
-  languages ?: string[];
-  selectedLanguage1 ?: string;
-  selectedLanguage2 ?: string;
+export class HomeComponent {
 
-  ngOnInit() {
-    this.languages = ["Español", "English", "Français", "Italiano"];
+  protected readonly Pages = Pages;
+
+  constructor(private router: Router) {
   }
+
+  goTo(page: Pages) {
+    this.router.navigate([page]);
+  }
+
 }

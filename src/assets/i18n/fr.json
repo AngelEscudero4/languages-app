@@ -1,13 +1,45 @@
 {
   "home": {
-    "TITLE": "DevineLangue",
-    "DESCRIPTION": "\"DevineLangue\" est l'application parfaite pour apprendre les langues de manière amusante et efficace. Choisissez vos langues, jouez à deviner les mots et élargissez votre vocabulaire. Personnalisez votre expérience, relevez des défis et connectez-vous avec d'autres étudiants dans une communauté conviviale. Téléchargez \"DevineLangue\" et commencez à apprendre les langues de manière passionnante dès aujourd'hui.",
+    "TITLE": "IdiomaAdivina",
+    "DESCRIPTION": "\"IdiomaAdivina\" est l'application parfaite pour apprendre les langues de manière amusante et efficace. Choisissez vos langues, jouez en devinant des mots et élargissez votre vocabulaire. Personnalisez votre expérience, relevez des défis et connectez-vous avec d'autres étudiants dans une communauté conviviale. Téléchargez \"IdiomaAdivina\" et commencez à apprendre les langues de manière passionnante dès aujourd'hui.",
     "NEW_LANGUAGE": "Nouvelle langue",
     "OLD_LANGUAGE": "Langue connue",
     "PLAY": "Jouer",
     "VOCABULARY": "Vocabulaire"
   },
-  "notFound": {
-    "NOT_FOUND": "Oops ! Page introuvable !"
+  "play": {
+    "SET_LANG": "Sélectionnez les langues !",
+    "SAME_LANG": "Vous avez choisi la même langue ! Pour jouer, veuillez choisir des langues différentes.",
+    "CHOOSE_GAME": "Choisissez un jeu !",
+    "games": {
+      "WORD_MASTER": {
+        "image": "word_master.jpg",
+        "name": "Maître des mots",
+        "description": "Devinez le mot en anglais correspondant au mot donné en espagnol."
+      },
+      "LANGUINI_CHALLENGE": {
+        "image": "linguini_challenge.png",
+        "name": "Défi Linguini",
+        "description": "Devenez un chef polyglotte en identifiant des ingrédients dans différentes langues."
+      },
+      "SYNONYM_SHOWDOWN": {
+        "image": "synonym_showdown.png",
+        "name": "Confrontation des synonymes",
+        "description": "Trouvez des synonymes pour les mots donnés et élargissez votre vocabulaire."
+      },
+      "VOCAB_RACER": {
+        "image": "vocab_racer.jpg",
+        "name": "Course de vocabulaire",
+        "description": "Course contre la montre pour traduire des mots dans plusieurs langues."
+      },
+      "LINGO_BINGO": {
+        "image": "lingo_bingo.png",
+        "name": "Lingo Bingo",
+        "description": "Marquez les mots corrects sur votre carte de bingo au fur et à mesure qu'ils sont annoncés dans une autre langue."
+      }
+    }
+  },
+"notFound": {
+    "NOT_FOUND": "Oups ! Page non trouvée !"
   }
 }

@@ -1,11 +1,43 @@
 {
   "home": {
-    "TITLE": "LanguageGuess",
-    "DESCRIPTION": "\"LanguageGuess\" is the perfect app for learning languages in a fun and effective way. Choose your languages, play guessing words, and expand your vocabulary. Personalize your experience, complete challenges, and connect with other students in a friendly community. Download \"LanguageGuess\" and start learning languages in an exciting way today.",
+    "TITLE": "IdiomaAdivina",
+    "DESCRIPTION": "\"IdiomaAdivina\" is the perfect app to learn languages in a fun and effective way. Choose your languages, play by guessing words, and expand your vocabulary. Personalize your experience, complete challenges, and connect with other students in a friendly community. Download \"IdiomaAdivina\" and start learning languages in an exciting way today.",
     "NEW_LANGUAGE": "New language",
     "OLD_LANGUAGE": "Known language",
     "PLAY": "Play",
     "VOCABULARY": "Vocabulary"
+  },
+  "play": {
+    "SET_LANG": "Select languages!",
+    "SAME_LANG": "You have chosen the same language! To play, please choose different languages.",
+    "CHOOSE_GAME": "Choose a game!",
+    "games": {
+      "WORD_MASTER": {
+        "image": "word_master.jpg",
+        "name": "Word Master",
+        "description": "Guess the English word corresponding to the given word in Spanish."
+      },
+      "LANGUINI_CHALLENGE": {
+        "image": "linguini_challenge.png",
+        "name": "Linguini Challenge",
+        "description": "Become a polyglot chef by identifying ingredients in different languages."
+      },
+      "SYNONYM_SHOWDOWN": {
+        "image": "synonym_showdown.png",
+        "name": "Synonym Showdown",
+        "description": "Find synonyms for the given words and expand your vocabulary."
+      },
+      "VOCAB_RACER": {
+        "image": "vocab_racer.jpg",
+        "name": "Vocab Racer",
+        "description": "Race against time to translate words in various languages."
+      },
+      "LINGO_BINGO": {
+        "image": "lingo_bingo.png",
+        "name": "Lingo Bingo",
+        "description": "Mark the correct words on your bingo card as they are announced in another language."
+      }
+    }
   },
   "notFound": {
     "NOT_FOUND": "Oops! Page not found!"

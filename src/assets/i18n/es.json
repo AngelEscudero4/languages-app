@@ -7,6 +7,38 @@
     "PLAY": "Jugar",
     "VOCABULARY": "Vocabulario"
   },
+  "play": {
+    "SET_LANG": "¡Selecciona idiomas!",
+    "SAME_LANG": "¡Has elegido el mismo idioma! Para jugar, por favor elige idiomas distintos",
+    "CHOOSE_GAME": "¡Elige un juego!",
+    "games": {
+      "WORD_MASTER": {
+        "image": "word_master.jpg",
+        "name": "Word Master",
+        "description": "Adivina la palabra en inglés correspondiente a la palabra dada en español."
+      },
+      "LANGUINI_CHALLENGE": {
+        "image": "linguini_challenge.png",
+        "name": "Linguini Challenge",
+        "description": "Conviértete en un chef políglota identificando ingredientes en diferentes idiomas."
+      },
+      "SYNONYM_SHOWDOWN": {
+        "image": "synonym_showdown.png",
+        "name": "Synonym Showdown",
+        "description": "Encuentra sinónimos para las palabras dadas y amplía tu vocabulario."
+      },
+      "VOCAB_RACER": {
+        "image": "vocab_racer.jpg",
+        "name": "Vocab Racer",
+        "description": "Compite contra el tiempo para traducir palabras en varios idiomas."
+      },
+      "LINGO_BINGO": {
+        "image": "lingo_bingo.png",
+        "name": "Lingo Bingo",
+        "description": "Marca las palabras correctas en tu tarjeta de bingo según se anuncien en otro idioma."
+      }
+    }
+  },
   "notFound": {
     "NOT_FOUND": "¡Ups! ¡Página no encontrada!"
   }

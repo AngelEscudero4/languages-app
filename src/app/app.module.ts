@@ -13,6 +13,9 @@ import {FormsModule} from "@angular/forms";
 import {TranslateLoader, TranslateModule, TranslateService} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { PlayComponent } from './pages/play/play.component';
+import { VocabularyComponent } from './pages/vocabulary/vocabulary.component';
+import {CardModule} from "primeng/card";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -24,7 +27,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     HomeComponent,
     NotFoundComponent,
-    ArrowComponent
+    ArrowComponent,
+    PlayComponent,
+    VocabularyComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     ButtonModule,
     DropdownModule,
-    FormsModule
+    FormsModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent],
