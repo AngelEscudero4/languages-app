@@ -10,21 +10,20 @@
     <p class="text-red-500" *ngIf="selectedSameLanguage()">{{'play.SAME_LANG' | translate}}</p>
   </div>
 
-  <div *ngIf="!disableButtons()" class="grid justify-content-center align-items-stretch">
-    <p-card *ngFor="let game of games" [header]=game.name class="col-3">
-      <ng-template pTemplate="header">
-        <img alt="Game image" src="../../../assets/games/img.png" />
-      </ng-template>
-      <p>
-        {{game.description}}
-      </p>
-      <ng-template pTemplate="footer">
-        <div class="flex justify-content-center">
-          <p-button label="{{'home.PLAY' | translate}}" (onClick)="play(game.name)"></p-button>
+  <p-carousel *ngIf="games.length>0 && !disableButtons()" [value]="games" [numVisible]="3" [numScroll]="3" [responsiveOptions]="responsiveOptions">
+    <ng-template let-game pTemplate="item">
+      <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+        <div class="mb-3">
+          <img alt="Game image" src="../../../assets/games/img.png" class="w-6 shadow-2"/>
         </div>
-      </ng-template>
-    </p-card>
-
-  </div>
+        <div>
+          <h3 class="mb-1">{{ game.name }}</h3>
+          <div class="mt-5">
+            <p-button label="{{'home.PLAY' | translate}}"></p-button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
 
 </div>

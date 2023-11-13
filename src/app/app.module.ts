@@ -17,6 +17,7 @@ import { PlayComponent } from './pages/play/play.component';
 import { VocabularyComponent } from './pages/vocabulary/vocabulary.component';
 import {CardModule} from "primeng/card";
 import {MenubarModule} from "primeng/menubar";
+import {CarouselModule} from "primeng/carousel";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -48,7 +49,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     DropdownModule,
     FormsModule,
     CardModule,
-    MenubarModule
+    MenubarModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],
